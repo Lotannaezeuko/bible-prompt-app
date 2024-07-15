@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Mood-Based Bible Verse Chatbot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This application is an interactive chatbot that provides users with relevant Bible verses based on their current mood or a given prompt. It combines the power of OpenAI's GPT model with a Bible API to offer personalized spiritual guidance.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- User input via text prompt or mood selection
+- AI-powered verse suggestion using OpenAI's GPT model
+- Fetching of full verse text from a Bible API
+- Responsive React frontend
+- Express.js backend server
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Frontend: React
+- Backend: Express.js
+- AI Model: OpenAI GPT-3.5-turbo
+- External API: Bible API
+- Testing: Jest and Selenium (planned)
 
-### `npm test`
+## Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before you begin, ensure you have met the following requirements:
 
-### `npm run build`
+- Node.js (v14.0.0 or later)
+- npm (v6.0.0 or later)
+- An OpenAI API key
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+2. Install dependencies for both frontend and backend:
+3. Set up environment variables:
+Create a `.env` file in the backend directory and add your OpenAI API key:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Starting the Application
 
-### `npm run eject`
+To run the application, you need to start both the frontend and backend servers:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Start the backend server:
+npm run start:backend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will start the Express server, typically on port 3001.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. In a new terminal, start the frontend:
+npm run start:frontend
+This will start the React development server, typically on port 3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Open your browser and navigate to `http://localhost:3000` to use the application.
 
-## Learn More
+## How to Use
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. On the home page, you can either:
+- Type a prompt describing your current situation or feelings into the text box and click "Search".
+- Click on one of the mood buttons to select a predefined emotion.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. The application will process your input using the OpenAI API to suggest an appropriate Bible verse.
 
-### Code Splitting
+3. The suggested verse will be fetched from the Bible API and displayed on the results page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. You can return to the home page to make another query.
 
-### Analyzing the Bundle Size
+## Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+(Note: Testing implementation is planned but not yet completed)
 
-### Making a Progressive Web App
+This application will be tested using Jest for unit and integration tests, and Selenium for end-to-end testing.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To run the tests (once implemented):
+npm test
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+[Insert your chosen license here]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contact
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions or feedback, please contact Lotanna Ezeuko at lotannaezeuko12@gmail.com.

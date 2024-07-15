@@ -1,0 +1,93 @@
+/* Ensure the app container takes the full viewport height */
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Center the greeting text */
+  .greeting {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the input box */
+  .input-box {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the search button */
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Add some space below the button */
+  }
+  
+  /* Ensure the mood buttons container is centered */
+  .mood-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Style the mood buttons */
+  .mood-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .happy { background-color: #cce5ff; color: #004085; }
+  .sad { background-color: #f8d7da; color: #721c24; }
+  .angry { background-color: #f5c6cb; color: #721c24; }
+  .shocked { background-color: #fff3cd; color: #856404; }
+  .love { background-color: #f5c6cb; color: #721c24; }
+  .laughing { background-color: #f1e7fe; color: #6f42c1; }
+  .cool { background-color: #d4edda; color: #155724; }
+  .sleepy { background-color: #d1ecf1; color: #0c5460; }
+  
+  /* Center the results content */
+  .results {
+    text-align: center;
+  }
+  
+  /* Style the results heading */
+  .results h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the results text */
+  .results p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Style the back link */
+  .results a {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .results a:hover {
+    text-decoration: underline;
+  }
+  
