@@ -40,12 +40,12 @@ Create a `.env` file in the backend directory and add your OpenAI API key:
 To run the application, you need to start both the frontend and backend servers:
 
 1. Start the backend server:
-npm run start:backend
+```npm run start:backend```
 
 This will start the Express server, typically on port 3001.
 
 2. In a new terminal, start the frontend:
-npm run start:frontend
+```npm run start:frontend```
 This will start the React development server, typically on port 3000.
 
 3. Open your browser and navigate to `http://localhost:3000` to use the application.
@@ -70,11 +70,6 @@ This application will be tested using Jest for unit and integration tests, and S
 
 To run the tests (once implemented):
 npm test
-
-
-## License
-
-[Insert your chosen license here]
 
 ## Contact
 
